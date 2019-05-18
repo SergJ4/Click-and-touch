@@ -25,6 +25,6 @@ class CustomFrameLayout @JvmOverloads constructor(
 
     override fun onInterceptTouchEvent(ev: MotionEvent?): Boolean {
         println("CustomFrameLayout onInterceptTouchEvent, event: ${MotionEvent.actionToString(ev!!.action)}")
-        return true
+        return super.onInterceptTouchEvent(ev)
     }
 }

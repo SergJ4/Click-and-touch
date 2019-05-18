@@ -27,4 +27,10 @@
 
     </ru.sergjav.touchtest.CustomFrameLayout>
 
+    <fragment
+        android:id="@+id/myFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="ru.sergjav.touchtest.TestFragment" />
+
 </ru.sergjav.touchtest.CustomConstraintLayout>

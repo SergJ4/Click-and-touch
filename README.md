@@ -6,8 +6,11 @@ Logs for fragment branch:
 
 CustomView IN ACTIVITY CLICKED WHEN FRAGMENT IN FRONT OF IT:
 Activity dispatchTouchEvent, event: ACTION_DOWN
+
 CustomConstraintLayout dispatchTouchEvent, event: ACTION_DOWN
+
 CustomConstraintLayout onInterceptTouchEvent, event: ACTION_DOWN
+
 CustomConstraintLayout dispatchTouchEvent, event: ACTION_DOWN
 CustomConstraintLayout onInterceptTouchEvent, event: ACTION_DOWN
 CustomConstraintLayout onTouchEvent, event: ACTION_DOWN

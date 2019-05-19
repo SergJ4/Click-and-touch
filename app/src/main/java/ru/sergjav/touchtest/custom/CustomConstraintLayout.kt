@@ -1,4 +1,4 @@
-package ru.sergjav.touchtest
+package ru.sergjav.touchtest.custom
 
 import android.content.Context
 import android.support.constraint.ConstraintLayout

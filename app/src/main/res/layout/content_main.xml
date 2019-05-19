@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ru.sergjav.touchtest.CustomConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ru.sergjav.touchtest.custom.CustomConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraint"
@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ru.sergjav.touchtest.CustomFrameLayout
+    <ru.sergjav.touchtest.custom.CustomFrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="#CCC">
 
-        <ru.sergjav.touchtest.CustomView
+        <ru.sergjav.touchtest.custom.CustomView
             android:id="@+id/myView"
             android:layout_width="150dp"
             android:layout_height="50dp"
@@ -25,7 +25,7 @@
             android:layout_gravity="center_vertical"
             android:background="#5de" />
 
-    </ru.sergjav.touchtest.CustomFrameLayout>
+    </ru.sergjav.touchtest.custom.CustomFrameLayout>
 
     <fragment
         android:id="@+id/myFragment"
@@ -33,4 +33,4 @@
         android:layout_height="match_parent"
         android:name="ru.sergjav.touchtest.TestFragment" />
 
-</ru.sergjav.touchtest.CustomConstraintLayout>
+</ru.sergjav.touchtest.custom.CustomConstraintLayout>

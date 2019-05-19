@@ -1,10 +1,13 @@
 package ru.sergjav.touchtest
 
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.DividerItemDecoration
+import android.support.v7.widget.LinearLayoutManager
 import android.view.MotionEvent
-import android.view.View
 import kotlinx.android.synthetic.main.content_main.*
+import ru.sergjav.touchtest.custom.CustomAdapter
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,12 +15,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.content_main)
 
-        myView.makeClickable("CustomView")
-    }
+        val layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = layoutManager
+        recyclerView.adapter = CustomAdapter()
 
-    private fun View.makeClickable(tag: String) {
-        isClickable = true
-        setOnClickListener { println("$tag clicked") }
+        val decoration = DividerItemDecoration(this, layoutManager.orientation)
+        decoration.setDrawable(ContextCompat.getDrawable(this, R.drawable.divider)!!)
+        recyclerView.addItemDecoration(decoration)
+
+
     }
 
     override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {

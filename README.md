@@ -27,7 +27,7 @@ CustomView onTouchEvent, event: ACTION_UP
 
 CustomView clicked  
 
-##### CustonFrameLayout INSIDE FRAGMENT CLICKED:  
+##### CustomFrameLayout INSIDE FRAGMENT CLICKED:  
 Activity dispatchTouchEvent, event: ACTION_DOWN  
 CustomConstraintLayout dispatchTouchEvent, event: ACTION_DOWN  
 CustomConstraintLayout onInterceptTouchEvent, event: ACTION_DOWN  
